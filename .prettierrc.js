@@ -3,6 +3,10 @@ module.exports = {
   env: {
     node: true,
   },
+  // 总是使用单引号
+  // singleQuote: true,
+  jsxBracketSameLine: true,
+
   extends: [
     "plugin:vue/essential",
     "eslint:recommended",
@@ -10,14 +14,6 @@ module.exports = {
     "@vue/prettier",
     "@vue/prettier/@typescript-eslint",
   ],
-  parserOptions: {
-    ecmaVersion: 2020,
-  },
-  rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-restricted-imports": "off",
-  },
   overrides: [
     {
       files: [
