@@ -33,6 +33,18 @@ npm run dev
 
 [@Prop 详解](./docs/@Prop.md)
 
+### vue-class
+
+## 请求库 - axios
+
+- [axios](https://github.com/axios/axios)
+
+自定义实例
+[Creating an instance](./docs/axios/instance.md)
+
+拦截器
+[interceptors](./docs/axios/interceptors.md)
+
 ### Compiles and minifies for production
 
 ```
