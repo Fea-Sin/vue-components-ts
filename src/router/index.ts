@@ -19,6 +19,11 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import(/* webpackChunkName: "about" */ "@/views/About.vue"),
   },
+  {
+    path: "/jsonParse",
+    name: "JsonParse",
+    component: () => import("@/views/JParse.vue"),
+  },
 ];
 
 const router = new VueRouter({

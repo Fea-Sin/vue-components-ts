@@ -13,7 +13,13 @@ npm install
 npm run dev
 ```
 
+### [组件列表](./docs/component.md)
+
+### [Vue 从第一行代码开始](./docs/vue/start.md)
+
 ## vue 技术栈详解
+
+- [Vue](https://cn.vuejs.org/v2/guide/)
 
 - [Vuex](https://vuex.vuejs.org/zh/)
 
@@ -44,6 +50,10 @@ npm run dev
 
 拦截器
 [interceptors](./docs/axios/interceptors.md)
+
+## TypeScript 基础
+
+- [类型](./docs/ts/type.md)
 
 ### Compiles and minifies for production
 

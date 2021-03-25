@@ -4,6 +4,8 @@
       <router-link to="/">Home</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/about">About</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/jsonParse">JsonParse</router-link>
     </div>
     <router-view />
   </div>
