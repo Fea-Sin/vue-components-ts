@@ -43,7 +43,11 @@ npm run dev
 
 [概述](./docs/vuex/overview.md)
 
-[state](./docs/vuex/state.md)
+[State](./docs/vuex/state.md)
+
+[Mutations]()
+
+[Getters](./docs/vuex/gatters.md)
 
 ### vuex-class
 

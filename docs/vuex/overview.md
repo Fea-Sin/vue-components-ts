@@ -51,6 +51,12 @@ Vuex 是 vue.js 应用程序的状态管理模式，它采用**集中式存储**
 
 - Mutations
 
+此时 Action 与 Mutation 概念是相同的
+
+> Redux 中是 dispatch Action
+>
+> Vuex 中是 commit Mutation
+
 ### State
 
 每一个 Vuex 应用的核心就是 store（仓库），它包含着应用中的共享状态（state）。
@@ -96,6 +102,12 @@ store.commit('increment')
 ```
 
 ### Actions
+
+此时 Action 与 Mutation 本质是相同的，只不过是不同的叫法而已
+
+> React Redux 中是 dispatch Action
+>
+> Vue Vuex 中是 commit Mutation
 
 用户所有与 state 的交互，都应该定义为 Action
 
