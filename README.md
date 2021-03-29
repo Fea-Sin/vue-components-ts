@@ -39,7 +39,13 @@ npm run dev
 
 [@Prop 详解](./docs/@Prop.md)
 
-### vue-class
+### vue 状态管理 vuex
+
+[概述](./docs/vuex/overview.md)
+
+[state](./docs/vuex/state.md)
+
+### vuex-class
 
 ## 请求库 - axios
 
