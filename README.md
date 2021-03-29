@@ -45,9 +45,7 @@ npm run dev
 
 [State](./docs/vuex/state.md)
 
-[Mutations]()
-
-[Getters](./docs/vuex/gatters.md)
+[Mutations](./docs/vuex/mutations.md)
 
 ### vuex-class
 
