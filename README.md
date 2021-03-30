@@ -49,7 +49,7 @@ npm run dev
 
 [Actions](./docs/vuex/actions.md)
 
-[Modules](./docs/vuex/moudles.md)
+[Modules](./docs/vuex/modules.md)
 
 [Actions](./docs/vuex/actions.md)
 
