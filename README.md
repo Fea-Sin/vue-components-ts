@@ -49,6 +49,10 @@ npm run dev
 
 [Actions](./docs/vuex/actions.md)
 
+[Modules](./docs/vuex/moudles.md)
+
+[Actions](./docs/vuex/actions.md)
+
 ### vuex-class
 
 ## 请求库 - axios
