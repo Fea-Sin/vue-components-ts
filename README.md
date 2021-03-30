@@ -51,7 +51,7 @@ npm run dev
 
 [Modules](./docs/vuex/modules.md)
 
-[Actions](./docs/vuex/actions.md)
+[Getter](./docs/vuex/getters.md)
 
 ### vuex-class
 
