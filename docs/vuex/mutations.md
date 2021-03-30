@@ -17,7 +17,7 @@
 > effects 就是 Vuex 中的 actions
 
 更改 Vuex 的 store 中的状态的唯一方法是 commit Mutation，每个 Mutation 都有
-一个字符串的**事件类型（type）**和一个回调函数（handler），这个回调函数就是我们
+一个字符串的**事件类型(type)**和一个回调函数 handler，这个回调函数就是我们
 进行状态更改的地方，并且它会接收 state 作为第一个参数
 
 ```

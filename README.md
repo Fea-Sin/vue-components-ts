@@ -47,6 +47,8 @@ npm run dev
 
 [Mutations](./docs/vuex/mutations.md)
 
+[Actions](./docs/vuex/actions.md)
+
 ### vuex-class
 
 ## 请求库 - axios
