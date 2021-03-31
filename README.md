@@ -33,11 +33,11 @@ npm run dev
 
 ### vue-property-decorator
 
-[概述](./docs/overview.md)
+[概述](./docs/vue-property/overview.md)
 
-[@Component 详解](./docs/@Component.md)
+[@Component 详解](./docs/vue-property/@Component.md)
 
-[@Prop 详解](./docs/@Prop.md)
+[@Prop 详解](./docs/vue-property/@Prop.md)
 
 ### vue 状态管理 vuex
 
