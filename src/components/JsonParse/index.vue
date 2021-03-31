@@ -31,9 +31,9 @@ import Item from "./Item.vue";
 
 interface ListItem {
   id: number;
-  type: number;
-  key: string;
-  value: string;
+  tableType: number;
+  originKey: string;
+  originValue: string;
   layer: number;
 }
 
@@ -48,7 +48,7 @@ export default class JsonParse extends Vue {
   @Prop({
     default: () => [],
   })
-  private jsonData!: ListItem[];
+  jsonData!: ListItem[];
 
   @Emit("onSelect")
   handleSelect(value: ListItem): ListItem[] {

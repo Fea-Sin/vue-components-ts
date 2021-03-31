@@ -20,9 +20,14 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "about" */ "@/views/About.vue"),
   },
   {
-    path: "/jsonParse",
+    path: "/json-parse",
     name: "JsonParse",
     component: () => import("@/views/JParse.vue"),
+  },
+  {
+    path: "/account",
+    name: "Account",
+    component: () => import("@/views/account/Account.vue"),
   },
 ];
 

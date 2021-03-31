@@ -1,5 +1,7 @@
 export default {
-  state: () => ({}),
+  state: () => ({
+    appName: "VU-FRAME",
+  }),
   mutations: {},
   actions: {},
 };

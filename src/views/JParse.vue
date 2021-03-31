@@ -6,27 +6,30 @@
  -->
 <template>
   <div class="jparse">
-    <h3>json parse</h3>
+    <h3>json parse009</h3>
 
     <JsonParse :jsonData="testData" @onSelect="handleSelect"></JsonParse>
+    <h3>json parse data</h3>
+    <JsonParse :jsonData="jsonData" @onSelect="handleSelectData"></JsonParse>
   </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import JsonParse from "@/components/JsonParse/index.vue";
+import DATA from "@/components/JsonParse/data";
 
 const testData: any = [
-  { id: 1, type: 0, key: "userName", value: "张三", layer: 1 },
-  { id: 2, type: 0, key: "sex", value: "男", layer: 1 },
-  { id: 3, type: 1, key: "orders", value: "[", layer: 2 },
-  { id: 4, type: 1, key: "", value: "[", layer: 3 },
-  { id: 5, type: 1, key: "", value: "{", layer: 4 },
-  { id: 6, type: 0, key: "id", value: "3", layer: 5 },
-  { id: 7, type: 0, key: "money", value: "300", layer: 5 },
-  { id: 8, type: 0, key: "abc", value: "fffeefe", layer: 5 },
-  { id: 9, type: 2, key: "", value: "}", layer: 4 },
-  { id: 10, type: 2, key: "", value: "]", layer: 3 },
-  { id: 11, type: 2, key: "", value: "]", layer: 2 },
+  { id: 1, tableType: 0, originKey: "userName", originValue: "张三", layer: 1 },
+  { id: 2, tableType: 0, originKey: "sex", originValue: "男", layer: 1 },
+  { id: 3, tableType: 1, originKey: "orders", originValue: "[", layer: 1 },
+  { id: 4, tableType: 1, originKey: "", originValue: "[", layer: 2 },
+  { id: 5, tableType: 1, originKey: "", originValue: "{", layer: 3 },
+  { id: 6, tableType: 0, originKey: "id", originValue: "3", layer: 4 },
+  { id: 7, tableType: 0, originKey: "money", originValue: "300", layer: 4 },
+  { id: 8, tableType: 0, originKey: "abc", originValue: "fffeefe", layer: 4 },
+  { id: 9, tableType: 2, originKey: "", originValue: "}", layer: 3 },
+  { id: 10, tableType: 2, originKey: "", originValue: "]", layer: 2 },
+  { id: 11, tableType: 2, originKey: "", originValue: "]", layer: 1 },
 ];
 
 @Component({
@@ -36,9 +39,13 @@ const testData: any = [
 })
 export default class JParse extends Vue {
   testData = testData;
+  jsonData: any = DATA;
 
   handleSelect(value: any): void {
     console.log("选中项目----", value);
+  }
+  handleSelectData(value: any): void {
+    console.log("select data--->", value);
   }
 }
 </script>

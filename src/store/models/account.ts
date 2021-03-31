@@ -3,8 +3,8 @@ import { queryApiGetMethod } from "@/services/app";
 export default {
   namespaced: true,
   state: () => ({
-    acount: "method",
-    viewCount: 10,
+    account: "account name is here",
+    viewCount: 109,
     data: {},
   }),
   mutations: {
@@ -19,9 +19,17 @@ export default {
     },
   },
   actions: {
-    async incrementBy({ commit }: any, payload: any) {
+    async performancePost({ commit }: any, payload: any) {
       const response = await queryApiGetMethod(payload);
       commit("saveData", response);
+    },
+    incrementBy({ commit }: any, payload: any) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          commit("add", payload);
+          resolve("commit ok");
+        }, 1000);
+      });
     },
   },
 };

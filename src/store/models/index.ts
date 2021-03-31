@@ -1,5 +1,5 @@
-import method from "./method";
+import account from "./account";
 
 export default {
-  method,
+  account,
 };

@@ -6,41 +6,41 @@
  -->
 <template>
   <li
-    v-if="listData.type === 0"
+    v-if="listData.tableType === 0"
     class="list"
     :style="{ paddingLeft: listData.layer * INTEND + 'px' }"
   >
     <input :id="listValie" type="checkbox" @change="checkChange" />
     <label :for="listValie">
-      <span>"{{ listData.key }}"</span>
+      <span>"{{ listData.originKey }}"</span>
       <span class="interval">:</span>
       <span v-if="labelTag">
-        {{ listData.value }}
+        {{ listData.originValue }}
       </span>
-      <span v-else>"{{ listData.value }}"</span>
+      <span v-else>"{{ listData.originValue }}"</span>
     </label>
   </li>
   <li
-    v-else-if="listData.type === 1"
+    v-else-if="listData.tableType === 1"
     :style="{ paddingLeft: listData.layer * INTEND + 'px' }"
   >
     <span class="decoration">
       <Icon size="20" type="md-arrow-dropdown" />
     </span>
-    <span v-if="listData.key">
-      <span>"{{ listData.key }}"</span>
+    <span v-if="listData.originKey">
+      <span>"{{ listData.originKey }}"</span>
       <span class="interval">:</span>
     </span>
     <span v-if="labelTag">
-      {{ listData.value }}
+      {{ listData.originValue }}
     </span>
-    <span v-else>"{{ listData.value }}"</span>
+    <span v-else>"{{ listData.originValue }}"</span>
   </li>
   <li v-else :style="{ paddingLeft: listData.layer * INTEND + 'px' }">
     <span v-if="labelTag">
-      {{ listData.value }}
+      {{ listData.originValue }}
     </span>
-    <span v-else>"{{ listData.value }}"</span>
+    <span v-else>"{{ listData.originValue }}"</span>
   </li>
 </template>
 <script lang="ts">
@@ -53,14 +53,14 @@ export default class Item extends Vue {
   @Prop() private listData!: any;
 
   get listValie(): string {
-    return `${this.listData.key}|${this.listData.value}`;
+    return `${this.listData.originKey}|${this.listData.originValue}`;
   }
   get labelTag(): boolean {
     if (
-      this.listData.value === "[" ||
-      this.listData.value === "]" ||
-      this.listData.value === "{" ||
-      this.listData.value === "}"
+      this.listData.originValue === "[" ||
+      this.listData.originValue === "]" ||
+      this.listData.originValue === "{" ||
+      this.listData.originValue === "}"
     ) {
       return true;
     }
