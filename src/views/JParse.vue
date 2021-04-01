@@ -6,17 +6,31 @@
  -->
 <template>
   <div class="jparse">
-    <h3>json parse009</h3>
+    <h3>json parse</h3>
 
     <JsonParse :jsonData="testData" @onSelect="handleSelect"></JsonParse>
     <h3>json parse data</h3>
-    <JsonParse :jsonData="jsonData" @onSelect="handleSelectData"></JsonParse>
+    <div class="vuBox">
+      <Button type="primary" @click="handlePost">请求数据</Button>
+      <div class="pageData">
+        <Input
+          v-model="pageData"
+          type="textarea"
+          :rows="4"
+          placeholder="输入json字符串"
+        />
+      </div>
+    </div>
+    <JsonParse :jsonData="formatData" @onSelect="handleSelectData"></JsonParse>
   </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { namespace } from "vuex-class";
 import JsonParse from "@/components/JsonParse/index.vue";
 import DATA from "@/components/JsonParse/data";
+
+const AccountModule = namespace("account");
 
 const testData: any = [
   { id: 1, tableType: 0, originKey: "userName", originValue: "张三", layer: 1 },
@@ -38,14 +52,31 @@ const testData: any = [
   },
 })
 export default class JParse extends Vue {
+  // *--- state ---*
+  pageData = "";
+
   testData = testData;
   jsonData: any = DATA;
 
+  // *---  store state ---*
+  @AccountModule.State formatData!: any;
+
+  // *--- store actions ---*
+  @AccountModule.Action fetchFormatJson: any;
+
+  // *--- methods ---*
   handleSelect(value: any): void {
     console.log("选中项目----", value);
   }
   handleSelectData(value: any): void {
     console.log("select data--->", value);
+  }
+  handlePost(): void {
+    console.log("请求数据----");
+    let obj = {
+      jsonString: this.pageData,
+    };
+    this.fetchFormatJson(obj);
   }
 }
 </script>
@@ -54,5 +85,8 @@ export default class JParse extends Vue {
   padding: 20px;
   text-align: left;
   font-size: 18px;
+}
+.pageData {
+  margin-top: 20px;
 }
 </style>

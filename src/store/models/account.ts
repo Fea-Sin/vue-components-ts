@@ -1,4 +1,4 @@
-import { queryApiGetMethod } from "@/services/app";
+import { queryApiGetMethod, queryFormatJson } from "@/services/app";
 
 export default {
   namespaced: true,
@@ -6,6 +6,7 @@ export default {
     account: "account name is here",
     viewCount: 109,
     data: {},
+    formatData: [],
   }),
   mutations: {
     add(state: any, payload: any) {
@@ -16,6 +17,9 @@ export default {
         ...state.data,
         ...payload.data,
       };
+    },
+    saveFormatData(state: any, payload: any) {
+      state.formatData = [...payload];
     },
   },
   actions: {
@@ -30,6 +34,13 @@ export default {
           resolve("commit ok");
         }, 1000);
       });
+    },
+    // eslint-disable-next-line
+    async fetchFormatJson({ commit }: any, payload: any) {
+      console.log("store 开始请求---", payload);
+      const response = await queryFormatJson(payload);
+      console.log("store中请求返回---->", response);
+      commit("saveFormatData", response.data);
     },
   },
 };

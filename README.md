@@ -57,6 +57,8 @@ npm run dev
 
 - [概述](./docs/vuex-class/overview.md)
 
+### vue-class-component
+
 ## 请求库 - axios
 
 - [axios](https://github.com/axios/axios)

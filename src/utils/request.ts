@@ -19,11 +19,17 @@ const HTTP_STATUS: any = {
 };
 
 const instanceManage = axios.create({
-  baseURL: process.env.VUE_APP_BASE_API + "/datastar",
+  // baseURL: process.env.VUE_APP_BASE_API + "/datastar",
+  // adxApi
+  baseURL: "/adxApi",
 });
 
 instanceManage.interceptors.request.use(
   (config: any) => {
+    config.headers["Authorization"] =
+      "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJndW9rYWltYTNAY3JlZGl0ZWFzZS5jbiIsInNjb3BlcyI6WyJST0xFX1VTRVIiXSwiaXNzIjoiaHR0cDovL2FkeC5jcmVkaXRlYXNlLmNvbSIsImp0aSI6IjIzNTBhZTg0LWUzYjEtNGIxOC1iMDMyLTljMWE3NGRhYzk1MyIsImlhdCI6MTYxNzI1NzExNywiZXhwIjoxNjE3MzQzNTE3fQ.qqBfHIoFePXtYkwy03fAbxtCyrqsouRaKaWr0wdD8fw3gvnUKcXnWBIUvQxx_uzk-WJ4CC91WQZwYVblGJbEzQ";
+
+    console.log("请求拦截器----", config);
     return config;
   },
   (error: any) => {
@@ -33,10 +39,12 @@ instanceManage.interceptors.request.use(
 
 instanceManage.interceptors.response.use(
   (response: any) => {
+    console.log("返回拦截器---", response);
     const data = response.data;
     return data;
   },
   (error: any) => {
+    console.log("返回拦截器---", error);
     const message =
       error &&
       error.response &&
