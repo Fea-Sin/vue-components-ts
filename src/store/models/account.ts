@@ -37,9 +37,7 @@ export default {
     },
     // eslint-disable-next-line
     async fetchFormatJson({ commit }: any, payload: any) {
-      console.log("store 开始请求---", payload);
       const response = await queryFormatJson(payload);
-      console.log("store中请求返回---->", response);
       commit("saveFormatData", response.data);
     },
   },

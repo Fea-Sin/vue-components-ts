@@ -72,7 +72,6 @@ export default class JParse extends Vue {
     console.log("select data--->", value);
   }
   handlePost(): void {
-    console.log("请求数据----");
     let obj = {
       jsonString: this.pageData,
     };

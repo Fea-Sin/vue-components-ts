@@ -59,6 +59,10 @@ npm run dev
 
 ### vue-class-component
 
+[计算属性](./docs/vue-class/computed-properties.md)
+
+[Hooks](./docs/vue-class/hooks.md)
+
 ## 请求库 - axios
 
 - [axios](https://github.com/axios/axios)
