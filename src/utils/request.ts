@@ -18,6 +18,9 @@ const HTTP_STATUS: any = {
   504: "网关超时",
 };
 
+const TOKEN =
+  "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJndW9rYWltYTNAY3JlZGl0ZWFzZS5jbiIsInNjb3BlcyI6WyJST0xFX1VTRVIiXSwiaXNzIjoiaHR0cDovL2FkeC5jcmVkaXRlYXNlLmNvbSIsImp0aSI6ImEyZDI1YjYxLTI0MjItNDU5YS1hNWE3LWVkZjQ3ODE3NWNiMSIsImlhdCI6MTYxNzc2MDE3NywiZXhwIjoxNjE3ODQ2NTc3fQ.WCgkwtDntSqtxKanB4bUpP9ydFVn7r3KFxgV6siU8oyvKiZWs4ciTYWI7aSvUZ_lr1-95TWWz1HMxaFHeWI8Bg";
+
 const instanceManage = axios.create({
   // baseURL: process.env.VUE_APP_BASE_API + "/datastar",
   // adxApi
@@ -26,8 +29,7 @@ const instanceManage = axios.create({
 
 instanceManage.interceptors.request.use(
   (config: any) => {
-    config.headers["Authorization"] =
-      "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJndW9rYWltYTNAY3JlZGl0ZWFzZS5jbiIsInNjb3BlcyI6WyJST0xFX1VTRVIiXSwiaXNzIjoiaHR0cDovL2FkeC5jcmVkaXRlYXNlLmNvbSIsImp0aSI6IjIzNTBhZTg0LWUzYjEtNGIxOC1iMDMyLTljMWE3NGRhYzk1MyIsImlhdCI6MTYxNzI1NzExNywiZXhwIjoxNjE3MzQzNTE3fQ.qqBfHIoFePXtYkwy03fAbxtCyrqsouRaKaWr0wdD8fw3gvnUKcXnWBIUvQxx_uzk-WJ4CC91WQZwYVblGJbEzQ";
+    config.headers["Authorization"] = TOKEN;
 
     return config;
   },
