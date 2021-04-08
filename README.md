@@ -53,6 +53,16 @@ npm run dev
 
 - [Getter](./docs/vuex/getters.md)
 
+### Vue Router 路由管理
+
+[概述](./docs/vue-router/overview.md)
+
+[动态路由匹配]()
+
+[嵌套路由]()
+
+[重定向和别名](./docs/vue-router/redirect.md)
+
 ### vuex-class
 
 - [概述](./docs/vuex-class/overview.md)
