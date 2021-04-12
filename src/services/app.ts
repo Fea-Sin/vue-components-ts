@@ -25,3 +25,12 @@ export async function queryFormatJson(params: any) {
     data: params,
   });
 }
+
+// json parse data
+export async function queryJsonData(params: any) {
+  return request({
+    method: "post",
+    url: "/dataworks/parseJson/format/buildSchema",
+    data: params,
+  });
+}

@@ -1,4 +1,5 @@
 import axios from "axios";
+import vm from "@/main";
 
 const HTTP_STATUS: any = {
   200: "服务器成功返回请求的数据",
@@ -19,7 +20,7 @@ const HTTP_STATUS: any = {
 };
 
 const TOKEN =
-  "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJndW9rYWltYTNAY3JlZGl0ZWFzZS5jbiIsInNjb3BlcyI6WyJST0xFX1VTRVIiXSwiaXNzIjoiaHR0cDovL2FkeC5jcmVkaXRlYXNlLmNvbSIsImp0aSI6ImEyZDI1YjYxLTI0MjItNDU5YS1hNWE3LWVkZjQ3ODE3NWNiMSIsImlhdCI6MTYxNzc2MDE3NywiZXhwIjoxNjE3ODQ2NTc3fQ.WCgkwtDntSqtxKanB4bUpP9ydFVn7r3KFxgV6siU8oyvKiZWs4ciTYWI7aSvUZ_lr1-95TWWz1HMxaFHeWI8Bg";
+  "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJndW9rYWltYTNAY3JlZGl0ZWFzZS5jbiIsInNjb3BlcyI6WyJST0xFX1VTRVIiXSwiaXNzIjoiaHR0cDovL2FkeC5jcmVkaXRlYXNlLmNvbSIsImp0aSI6ImI4MzRjZTMzLTRkYmItNDkxZS1hMmI2LTk0ODZkY2UzMzE3MiIsImlhdCI6MTYxNzk0NzI2MywiZXhwIjoxNjE4MDMzNjYzfQ.MUPt08D4gYGfNTPM6co4QTJowTkvUDBSht7cssNNThhKxbcMAph6ECAHayBn1otEEjTbRNFzTRgk-78ENWm_ZQ";
 
 const instanceManage = axios.create({
   // baseURL: process.env.VUE_APP_BASE_API + "/datastar",
@@ -51,6 +52,7 @@ instanceManage.interceptors.response.use(
         HTTP_STATUS[error.response.status] ||
         "未知错误");
     error.message = message;
+    vm.$Message.error(message);
     return Promise.reject(error);
   }
 );

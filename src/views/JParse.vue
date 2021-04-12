@@ -11,7 +11,10 @@
     <JsonParse :jsonData="testData" @onSelect="handleSelect"></JsonParse>
     <h3>json parse data</h3>
     <div class="vuBox">
-      <Button type="primary" @click="handlePost">请求数据</Button>
+      <Button type="primary" @click="handlePost" class="marR15">
+        请求数据
+      </Button>
+      <Button type="primary" @click="handleData">提交数据</Button>
       <div class="pageData">
         <Input
           v-model="pageData"
@@ -54,15 +57,18 @@ const testData: any = [
 export default class JParse extends Vue {
   // *--- state ---*
   pageData = "";
+  selectData = [];
 
   testData = testData;
   jsonData: any = DATA;
 
   // *---  store state ---*
   @AccountModule.State formatData!: any;
+  @AccountModule.State postData!: any;
 
   // *--- store actions ---*
   @AccountModule.Action fetchFormatJson: any;
+  @AccountModule.Action fetchJsonData: any;
 
   // *--- methods ---*
   handleSelect(value: any): void {
@@ -70,12 +76,22 @@ export default class JParse extends Vue {
   }
   handleSelectData(value: any): void {
     console.log("select data--->", value);
+    this.selectData = value;
   }
   handlePost(): void {
     let obj = {
       jsonString: this.pageData,
     };
     this.fetchFormatJson(obj);
+  }
+  handleData(): void {
+    let obj = {
+      jsonString: this.pageData,
+      fieldList: this.selectData,
+    };
+    this.fetchJsonData(obj).then(() => {
+      console.log("提交数据返回--->", this.postData);
+    });
   }
 }
 </script>

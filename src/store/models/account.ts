@@ -1,4 +1,15 @@
-import { queryApiGetMethod, queryFormatJson } from "@/services/app";
+import {
+  queryApiGetMethod,
+  queryFormatJson,
+  queryJsonData,
+} from "@/services/app";
+import vm from "@/main";
+
+interface Response {
+  code?: number;
+  data?: any;
+  msg?: string;
+}
 
 export default {
   namespaced: true,
@@ -7,6 +18,7 @@ export default {
     viewCount: 109,
     data: {},
     formatData: [],
+    postData: {},
   }),
   mutations: {
     add(state: any, payload: any) {
@@ -20,6 +32,9 @@ export default {
     },
     saveFormatData(state: any, payload: any) {
       state.formatData = [...payload];
+    },
+    savePostData(state: any, payload: any): void {
+      state.postData = payload;
     },
   },
   actions: {
@@ -39,6 +54,13 @@ export default {
     async fetchFormatJson({ commit }: any, payload: any) {
       const response = await queryFormatJson(payload);
       commit("saveFormatData", response.data);
+    },
+    async fetchJsonData({ commit }: any, payload: any) {
+      const response: Response = await queryJsonData(payload);
+      if (response && response.code && response.code > 200) {
+        vm.$Message.error(response.msg);
+      }
+      commit("savePostData", response);
     },
   },
 };

@@ -10,8 +10,10 @@ Vue.config.productionTip = false;
 
 Vue.use(iView);
 
-new Vue({
+const VM = new Vue({
   router,
   store,
   render: (h) => h(App),
 }).$mount("#app");
+
+export default VM;
