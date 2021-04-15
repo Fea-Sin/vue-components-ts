@@ -29,6 +29,11 @@ const routes: Array<RouteConfig> = [
     name: "Account",
     component: () => import("@/views/account/Account.vue"),
   },
+  {
+    path: "/input-table",
+    name: "InputTable",
+    component: () => import("@/views/InputTable.vue"),
+  },
 ];
 
 const router = new VueRouter({

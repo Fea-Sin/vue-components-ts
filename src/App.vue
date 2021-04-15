@@ -8,6 +8,8 @@
       <router-link to="/json-parse">JsonParse</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/account">Account</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/input-table">InputTable</router-link>
     </div>
     <router-view />
   </div>
