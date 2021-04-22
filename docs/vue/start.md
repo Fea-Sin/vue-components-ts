@@ -4,6 +4,10 @@
 
 - [起步]()
 
+- [Vue 生命周期](./lifecycle.md)
+
+- [$nextTick](./nextTick.md)
+
 - [插槽](./solt.md)
 
 - [计算属性和侦听器](./compute-watch.md)
