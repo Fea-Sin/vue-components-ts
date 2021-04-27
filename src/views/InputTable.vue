@@ -2,7 +2,10 @@
   <div class="container">
     <h3>Input Table</h3>
     <div>
-      <!-- <Table border :columns="columns1" :data="data1"></Table> -->
+      <Table border :columns="columns1" :data="data1"></Table>
+    </div>
+    <div>
+      <i-switch v-model="switch1" />
     </div>
   </div>
 </template>
@@ -20,7 +23,7 @@ const columns = [
   },
   {
     title: "Address",
-    slot: "address",
+    key: "address",
     with: 150,
   },
 ];
@@ -55,6 +58,7 @@ const data = [
 export default class InputTable extends Vue {
   columns1 = columns;
   data1 = data;
+  switch1 = true;
 }
 </script>
 <style lang="less" scoped>

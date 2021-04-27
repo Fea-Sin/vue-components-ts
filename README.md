@@ -55,13 +55,15 @@ npm run dev
 
 ### Vue Router 路由管理
 
-[概述](./docs/vue-router/overview.md)
+- [概述](./docs/vue-router/overview.md)
 
-[动态路由匹配]()
+- [动态路由匹配]()
 
-[嵌套路由]()
+- [嵌套路由]()
 
-[重定向和别名](./docs/vue-router/redirect.md)
+- [重定向和别名](./docs/vue-router/redirect.md)
+
+- [导航守卫]()
 
 ### vuex-class
 
@@ -99,9 +101,9 @@ npm run dev
 
 - [@mixin and @include](./docs/sass/mixin.md)
 
-## Polyfill
+## -[Polyfill](./docs/polyfill/polyfill.md)
 
-- [Polyfill]()
+## -[原生 js 与 DOM](./docs/js-dom/start.md)
 
 ### Compiles and minifies for production
 
