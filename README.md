@@ -39,6 +39,8 @@ npm run dev
 
 - [@Prop 详解](./docs/vue-property/@Prop.md)
 
+- [@Emit 详解](./docs/vue-property/@Emit.md)
+
 ### vue 状态管理 vuex
 
 - [概述](./docs/vuex/overview.md)
