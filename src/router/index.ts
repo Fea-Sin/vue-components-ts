@@ -34,6 +34,11 @@ const routes: Array<RouteConfig> = [
     name: "InputTable",
     component: () => import("@/views/InputTable.vue"),
   },
+  {
+    path: "/auto-loading",
+    name: "AutoLoading",
+    component: () => import("@/views/AutoLoading.vue"),
+  },
 ];
 
 const router = new VueRouter({

@@ -42,11 +42,11 @@ export default {
       const response = await queryApiGetMethod(payload);
       commit("saveData", response);
     },
-    incrementBy({ commit }: any, payload: any) {
+    incrementBy({ commit, state }: any, payload: any) {
       return new Promise((resolve) => {
         setTimeout(() => {
           commit("add", payload);
-          resolve("commit ok");
+          resolve(state.viewCount);
         }, 1000);
       });
     },
@@ -62,5 +62,22 @@ export default {
       }
       commit("savePostData", response);
     },
+    // test auto loading for AsyncFunction
+    // eslint-disable-next-line
+    async autoLoadingTestAsync({ commit }: any, payload: any) {
+      const response = await new Promise((resolve) => {
+        setTimeout(() => {
+          resolve("auto loading async");
+        }, 5000);
+      });
+      return response;
+    },
+    // test auto loading GeneratorFunction
+    // eslint-disable-next-line
+    // *autoLoadingTestGenerator({ commit }: any, payload: any): any {
+    //   const response = yield setTimeout(() => {
+    //     console.log("generator function");
+    //   }, 2000);
+    // },
   },
 };

@@ -10,6 +10,8 @@
       <router-link to="/account">Account</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/input-table">InputTable</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/auto-loading">AutoLoading</router-link>
     </div>
     <router-view />
   </div>
