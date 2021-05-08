@@ -8,7 +8,9 @@
 
 - [$nextTick](./nextTick.md)
 
-- [事件处理]()
+- [渲染函数 & JSX](./render.md)
+
+- [事件处理](./events.md)
 
 - [插槽](./solt.md)
 
