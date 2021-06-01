@@ -12,6 +12,9 @@
         <Button @click="small">缩小</Button>
       </div>
     </div>
+    <div class="imgbox">
+      <img src="../assets/avator.png" />
+    </div>
   </div>
 </template>
 
@@ -61,6 +64,15 @@ export default class About extends Vue {
   }
   .handle {
     text-align: left;
+  }
+}
+.imgbox {
+  text-align: left;
+  width: 150px;
+  height: 150px;
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 </style>
