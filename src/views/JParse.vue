@@ -31,7 +31,6 @@
 import { Component, Vue } from "vue-property-decorator";
 import { namespace } from "vuex-class";
 import JsonParse from "@/components/JsonParse/index.vue";
-import DATA from "@/components/JsonParse/data";
 
 const AccountModule = namespace("account");
 
@@ -60,7 +59,6 @@ export default class JParse extends Vue {
   selectData = [];
 
   testData = testData;
-  jsonData: any = DATA;
 
   // *---  store state ---*
   @AccountModule.State formatData!: any;
