@@ -39,6 +39,11 @@ const routes: Array<RouteConfig> = [
     name: "AutoLoading",
     component: () => import("@/views/AutoLoading.vue"),
   },
+  {
+    path: "/debounce",
+    name: "Debounce",
+    component: () => import("@/views/Debounce.vue"),
+  },
 ];
 
 const router = new VueRouter({

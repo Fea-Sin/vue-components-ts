@@ -12,6 +12,8 @@
       <router-link to="/input-table">InputTable</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/auto-loading">AutoLoading</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/debounce">Debounce</router-link>
     </div>
     <router-view />
   </div>
