@@ -59,13 +59,13 @@ npm run dev
 
 - [概述](./docs/vue-router/overview.md)
 
-- [动态路由匹配]()
+<!-- - [动态路由匹配]() -->
 
-- [嵌套路由]()
+<!-- - [嵌套路由]() -->
 
 - [重定向和别名](./docs/vue-router/redirect.md)
 
-- [导航守卫]()
+<!-- - [导航守卫]() -->
 
 ### vuex-class
 
@@ -96,6 +96,8 @@ npm run dev
 ## TypeScript 基础
 
 - [类型](./docs/ts/type.md)
+
+- [VUE + TS](./docs/ts/vue-ts.md)
 
 ## Sass => Less
 
