@@ -161,3 +161,43 @@ export default {
 };
 </script>
 ```
+
+### 生命周期 Hooks
+
+一个 Vue component 有 8 个声明周期 hooks，包括`created`、`mounted`等等
+他们声明为普通的 class methods，生命周期钩子是自动被调用的，他们既不需要参数，也不会返回值，
+所以他们不需要 typing arguments，return types
+
+```ts
+export default class HelloWorld extends Vue {
+  created() {
+    // do something
+  }
+
+  mounted() {
+    // do something
+  }
+
+  beforeUpdate() {
+    // do something
+  }
+}
+```
+
+等价的 js 代码
+
+```js
+export default {
+
+  created() {
+    // do something
+  }
+  mounted() {
+    // do something
+  }
+  beforeUpdate() {
+    // do something
+  }
+
+}
+```

@@ -25,5 +25,9 @@ export default class DebounceTs extends Vue implements IDebounceTs {
   }
   // eslint-disable-next-line
   debounceChange() {}
+
+  mounted() {
+    console.log("Mount---->");
+  }
 }
 </script>

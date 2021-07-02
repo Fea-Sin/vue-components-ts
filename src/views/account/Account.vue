@@ -65,6 +65,9 @@ export default class Account extends Vue {
       this.$Message.success("异步 ACTION 执行成功！");
     });
   }
+  beforeUpdate() {
+    console.log("before update---->");
+  }
 }
 </script>
 <style lang="less" scoped>
