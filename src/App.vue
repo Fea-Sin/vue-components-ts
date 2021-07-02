@@ -14,6 +14,8 @@
       <router-link to="/auto-loading">AutoLoading</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/debounce">Debounce</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/debouncets">DebounceTs</router-link>
     </div>
     <router-view />
   </div>
