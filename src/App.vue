@@ -16,6 +16,8 @@
       <router-link to="/debounce">Debounce</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/debouncets">DebounceTs</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/transition">过渡</router-link>
     </div>
     <router-view />
   </div>

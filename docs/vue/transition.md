@@ -60,6 +60,8 @@ new Vue({
 
 ### 过渡类名
 
+在进入/离开的过渡中，会有 6 个 class 切换
+
 - v-enter
 
 - v-enter-active

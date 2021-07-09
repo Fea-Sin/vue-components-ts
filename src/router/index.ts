@@ -49,6 +49,11 @@ const routes: Array<RouteConfig> = [
     name: "Debouncets",
     component: () => import("@/views/Debouncets.vue"),
   },
+  {
+    path: "/transition",
+    name: "Transition",
+    component: () => import("@/views/transition/Trana.vue"),
+  },
 ];
 
 const router = new VueRouter({

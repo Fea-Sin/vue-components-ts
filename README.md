@@ -1,6 +1,7 @@
 # Vue-Class-Componet-Ts
 
 Vue Best Practices
+
 Vue SPA（单页面应用）最佳实践
 
 ### Open Box
