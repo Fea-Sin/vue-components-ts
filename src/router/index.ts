@@ -54,6 +54,11 @@ const routes: Array<RouteConfig> = [
     name: "Transition",
     component: () => import("@/views/transition/Trana.vue"),
   },
+  {
+    path: "/scroll",
+    name: "Scroll",
+    component: () => import("@/views/Scroll.vue"),
+  },
 ];
 
 const router = new VueRouter({

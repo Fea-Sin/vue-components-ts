@@ -18,6 +18,8 @@
       <router-link to="/debouncets">DebounceTs</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/transition">过渡</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/scroll">Scroll</router-link>
     </div>
     <router-view />
   </div>
@@ -35,6 +37,7 @@
 #nav {
   padding: 30px;
   font-size: 20px;
+  text-align: left;
 
   a {
     font-weight: bold;
