@@ -66,7 +66,9 @@ npm run dev
 
 - [重定向和别名](./docs/vue-router/redirect.md)
 
-<!-- - [导航守卫]() -->
+- [导航守卫](./docs/vue-router/route-gate.md)
+
+- [路由权限之 - addRoute](./docs/vue-router/addRoute.md)
 
 ### vuex-class
 
