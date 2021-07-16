@@ -14,5 +14,5 @@ addRoute(route: RoutConfig): () => void
 在现有路由下动态添加一条子路由。如果该路由规则有`name`，并且已经存在一个与之相同的名字，则会覆盖它
 
 ```ts
-addRoute(parentName: string, route: RouteConfig): () => voide
+addRoute(parentName: string, route: RouteConfig): () => void
 ```
