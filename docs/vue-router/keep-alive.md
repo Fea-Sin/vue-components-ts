@@ -14,7 +14,7 @@ keep-alive 是 Vue 内置组件
 >
 > 如果有上述的多个条件性的子元素，`keep-alive`要求同时只有一个子元素被渲染
 
-`include` prop 允许组件有条件的缓存， 以逗号分割的`name`字符串、正则表达式或`name`数组
+`include` prop 允许组件有条件的缓存，以逗号分割的`name`字符串、正则表达式或以`name`为元素数组
 
 这里的`name`是组件的`name`属性，一定要为组件显示定义`name`属性
 
