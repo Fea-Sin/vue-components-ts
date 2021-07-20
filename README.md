@@ -62,13 +62,13 @@ npm run dev
 
 <!-- - [动态路由匹配]() -->
 
-<!-- - [嵌套路由]() -->
-
 - [重定向和别名](./docs/vue-router/redirect.md)
 
 - [导航守卫](./docs/vue-router/route-gate.md)
 
 - [路由权限之 - addRoute](./docs/vue-router/addRoute.md)
+
+- [keep alive](./docs/vue-router/keep-alive.md)
 
 ### vuex-class
 
