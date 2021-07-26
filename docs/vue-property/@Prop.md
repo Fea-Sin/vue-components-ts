@@ -12,8 +12,8 @@ import { Vue, Component, Prop } from "vue-property-decorator"
 
 @Component
 export default class YourComponent extends Vue {
-  @Prop(Number) private propA: number
+  @Prop(Number) private propA: number | undefined
   @Prop({default: "default value"}) readonly propB!: string
-  @Prop([String, Boolean]) private propC: string | boolean
+  @Prop([String, Boolean]) private propC: string | boolean | undefined
 }
 ```
