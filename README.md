@@ -60,7 +60,7 @@ npm run dev
 
 - [概述](./docs/vue-router/overview.md)
 
-<!-- - [动态路由匹配]() -->
+- [动态路由匹配](./docs/vue-router/dynamic.md)
 
 - [重定向和别名](./docs/vue-router/redirect.md)
 
