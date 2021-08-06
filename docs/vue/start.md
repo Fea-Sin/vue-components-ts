@@ -1,9 +1,5 @@
 ## Vue 从第一行代码开始
 
-<!-- - [Vue.js 是什么]() -->
-
-<!-- - [起步]() -->
-
 - [Vue 生命周期](./lifecycle.md)
 
 - [$nextTick](./nextTick.md)
@@ -25,3 +21,5 @@
 - [插件](./plugin.md)
 
 - [ref](./ref.md)
+
+- [生命周期之 updated](./updated.md)
