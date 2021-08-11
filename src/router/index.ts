@@ -59,6 +59,11 @@ const routes: Array<RouteConfig> = [
     name: "Scroll",
     component: () => import("@/views/Scroll.vue"),
   },
+  {
+    path: "/vface",
+    name: "Vface",
+    component: () => import("@/views/Vface.vue"),
+  },
 ];
 
 const router = new VueRouter({

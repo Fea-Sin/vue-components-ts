@@ -20,6 +20,8 @@
       <router-link to="/transition">过渡</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/scroll">Scroll</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/vface">VFAce</router-link>
     </div>
     <router-view />
   </div>
