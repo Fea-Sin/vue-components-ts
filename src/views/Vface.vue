@@ -14,17 +14,17 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import "ace-builds/src-min-noconflict/ext-searchbox";
+import "ace-builds/src-min-noconflict/ext-language_tools";
+
 const languages = ["javascript", "mysql", "golang", "java"];
 const themes = ["monokai", "solarized_light"];
-
 languages.forEach((lang) => {
   require(`ace-builds/src-noconflict/mode-${lang}`);
 });
 themes.forEach((theme) => {
   require(`ace-builds/src-noconflict/theme-${theme}`);
 });
-import "ace-builds/src-min-noconflict/ext-searchbox";
-import "ace-builds/src-min-noconflict/ext-language_tools";
 
 @Component({
   components: {},
