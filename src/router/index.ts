@@ -64,6 +64,11 @@ const routes: Array<RouteConfig> = [
     name: "Vface",
     component: () => import("@/views/Vface.vue"),
   },
+  {
+    path: "/editor",
+    name: "Editor",
+    component: () => import("@/views/Editor.vue"),
+  },
 ];
 
 const router = new VueRouter({

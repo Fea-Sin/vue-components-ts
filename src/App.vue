@@ -22,6 +22,8 @@
       <router-link to="/scroll">Scroll</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/vface">VFAce</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/editor">MyEditor</router-link>
     </div>
     <router-view />
   </div>

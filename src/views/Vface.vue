@@ -1,11 +1,30 @@
 <template>
   <div class="TBox">
-    <div>Ace</div>
-    <!-- <VfAce /> -->
+    <vf-ace
+      name="my-ace"
+      width="100%"
+      height="700px"
+      placeholder="VF-ACE 编辑器"
+      theme="monokai"
+      mode="mysql"
+      :fontSize="20"
+      :enableLiveAutocompletion="true"
+    />
   </div>
 </template>
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+const languages = ["javascript", "mysql", "golang", "java"];
+const themes = ["monokai", "solarized_light"];
+
+languages.forEach((lang) => {
+  require(`ace-builds/src-noconflict/mode-${lang}`);
+});
+themes.forEach((theme) => {
+  require(`ace-builds/src-noconflict/theme-${theme}`);
+});
+import "ace-builds/src-min-noconflict/ext-searchbox";
+import "ace-builds/src-min-noconflict/ext-language_tools";
 
 @Component({
   components: {},
