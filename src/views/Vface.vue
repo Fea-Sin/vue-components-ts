@@ -1,6 +1,7 @@
 <template>
   <div class="TBox">
     <div>Ace</div>
+    <!-- <VfAce /> -->
   </div>
 </template>
 <script lang="ts">
