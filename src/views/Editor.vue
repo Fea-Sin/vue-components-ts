@@ -1,7 +1,6 @@
 <template>
   <div class="TBox">
     <div>Editor</div>
-    <!-- <MyEditor width="100%" height="500px" /> -->
   </div>
 </template>
 <script lang="ts">

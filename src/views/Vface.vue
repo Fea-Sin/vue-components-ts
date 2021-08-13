@@ -5,7 +5,7 @@
       width="100%"
       height="700px"
       placeholder="VF-ACE 编辑器"
-      theme="monokai"
+      theme="solarized_light"
       mode="mysql"
       :fontSize="20"
       :enableLiveAutocompletion="true"
