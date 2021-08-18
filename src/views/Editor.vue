@@ -1,6 +1,13 @@
 <template>
   <div class="TBox">
-    <div>Editor</div>
+    <vf-split
+      width="100%"
+      height="700px"
+      theme="solarized_light"
+      mode="mysql"
+      :fontSize="20"
+      :enableLiveAutocompletion="true"
+    />
   </div>
 </template>
 <script lang="ts">
