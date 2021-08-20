@@ -26,9 +26,7 @@ themes.forEach((theme) => {
   require(`ace-builds/src-noconflict/theme-${theme}`);
 });
 
-@Component({
-  components: {},
-})
+@Component
 export default class AceDemo extends Vue {}
 </script>
 <style lang="less" scoped></style>

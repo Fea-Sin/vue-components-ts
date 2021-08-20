@@ -23,7 +23,9 @@
       <span class="nav-tab-interval">|</span>
       <router-link to="/vface">VFAce</router-link>
       <span class="nav-tab-interval">|</span>
-      <router-link to="/editor">MyEditor</router-link>
+      <router-link to="/editor">VFSplit</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/diff">VFDiff</router-link>
     </div>
     <router-view />
   </div>

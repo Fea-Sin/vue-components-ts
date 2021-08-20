@@ -69,6 +69,11 @@ const routes: Array<RouteConfig> = [
     name: "Editor",
     component: () => import("@/views/Editor.vue"),
   },
+  {
+    path: "/diff",
+    name: "Diff",
+    component: () => import("@/views/MyDiff.vue"),
+  },
 ];
 
 const router = new VueRouter({
