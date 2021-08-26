@@ -17,12 +17,25 @@
     <div class="box">
       <MyAlert title="8778787878" />
     </div>
+    <div class="box">
+      <local-alert
+        title="本地引用"
+        type="warning"
+        effect="dark"
+        description="这里是一些文本等等"
+      />
+    </div>
   </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
+import { Alert } from "vf-vue-ui";
 
-export default Vue.extend({});
+export default Vue.extend({
+  components: {
+    LocalAlert: Alert,
+  },
+});
 </script>
 <style lang="less" scoped>
 .box {

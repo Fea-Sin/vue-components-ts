@@ -7,7 +7,7 @@ import iView from "iview";
 import "iview/dist/styles/iview.css";
 import "./assets/css/index.less";
 
-import VFUI from "vf-vue-ui";
+import VFUI, { Alert, version } from "vf-vue-ui";
 
 import VFACE from "vf-vue-ace";
 import "vf-vue-ui/lib/theme/index.css";
@@ -18,8 +18,8 @@ Vue.use(iView);
 Vue.use(VFACE);
 Vue.use(VFUI);
 
-console.log("VFUI version----", VFUI.version);
-Vue.component("MyAlert", VFUI.Alert);
+Vue.component("MyAlert", Alert);
+console.log("VFUI version---", version);
 
 const VM = new Vue({
   router,
