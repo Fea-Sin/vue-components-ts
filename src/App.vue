@@ -26,6 +26,8 @@
       <router-link to="/editor">VFSplit</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/diff">VFDiff</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/vf-alert">VFAlert</router-link>
     </div>
     <router-view />
   </div>

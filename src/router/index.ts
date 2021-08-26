@@ -74,6 +74,11 @@ const routes: Array<RouteConfig> = [
     name: "Diff",
     component: () => import("@/views/MyDiff.vue"),
   },
+  {
+    path: "/vf-alert",
+    name: "VFAlert",
+    component: () => import("@/views/VFUI/alert.vue"),
+  },
 ];
 
 const router = new VueRouter({

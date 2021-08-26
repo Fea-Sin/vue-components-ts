@@ -7,12 +7,12 @@ import iView from "iview";
 import "iview/dist/styles/iview.css";
 import "./assets/css/index.less";
 
-import VFUI from "vf-vue-ace";
+import VFACE from "vf-vue-ace";
 
 Vue.config.productionTip = false;
 
 Vue.use(iView);
-Vue.use(VFUI);
+Vue.use(VFACE);
 
 const VM = new Vue({
   router,
