@@ -79,6 +79,11 @@ const routes: Array<RouteConfig> = [
     name: "VFAlert",
     component: () => import("@/views/VFUI/alert.vue"),
   },
+  {
+    path: "/vf-task-tree",
+    name: "VFTaskTree",
+    component: () => import("@/views/VFUI/task-tree.vue"),
+  },
 ];
 
 const router = new VueRouter({
