@@ -5,12 +5,13 @@ import store from "./store";
 
 import iView from "iview";
 import "iview/dist/styles/iview.css";
-import "./assets/css/index.less";
 
 import VFACE from "vf-vue-ace";
 
 import VFUI, { Alert, version } from "vf-vue-ui";
 import "vf-vue-ui/lib/theme/index.css";
+
+import "./assets/css/index.less";
 
 Vue.config.productionTip = false;
 
