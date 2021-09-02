@@ -84,6 +84,11 @@ const routes: Array<RouteConfig> = [
     name: "VFTaskTree",
     component: () => import("@/views/VFUI/task-tree.vue"),
   },
+  {
+    path: "/ace-alli",
+    name: "AceAlli",
+    component: () => import("@/views/AceAlli.vue"),
+  },
 ];
 
 const router = new VueRouter({

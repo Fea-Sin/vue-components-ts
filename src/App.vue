@@ -30,6 +30,8 @@
       <router-link to="/vf-alert">VFAlert</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/vf-task-tree">VFTaskTree</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/ace-alli">AceAlli</router-link>
     </div>
     <router-view />
   </div>
