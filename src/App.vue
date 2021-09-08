@@ -32,6 +32,8 @@
       <router-link to="/vf-task-tree">VFTaskTree</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/ace-alli">AceAlli</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/split-demo">SplitDemo</router-link>
     </div>
     <router-view />
   </div>

@@ -89,6 +89,11 @@ const routes: Array<RouteConfig> = [
     name: "AceAlli",
     component: () => import("@/views/AceAlli.vue"),
   },
+  {
+    path: "/split-demo",
+    name: "SplitDemo",
+    component: () => import("@/views/SplitDemo.vue"),
+  },
 ];
 
 const router = new VueRouter({
