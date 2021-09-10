@@ -94,6 +94,11 @@ const routes: Array<RouteConfig> = [
     name: "SplitDemo",
     component: () => import("@/views/SplitDemo.vue"),
   },
+  {
+    path: "/vf-tag",
+    name: "VFTag",
+    component: () => import("@/views/VFUI/tag.vue"),
+  },
 ];
 
 const router = new VueRouter({
