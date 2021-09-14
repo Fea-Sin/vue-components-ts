@@ -99,6 +99,11 @@ const routes: Array<RouteConfig> = [
     name: "VFTag",
     component: () => import("@/views/VFUI/tag.vue"),
   },
+  {
+    path: "/vf-popover",
+    name: "VFPop",
+    component: () => import("@/views/VFUI/popover.vue"),
+  },
 ];
 
 const router = new VueRouter({

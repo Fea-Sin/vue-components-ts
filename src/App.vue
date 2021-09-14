@@ -36,6 +36,8 @@
       <router-link to="/split-demo">SplitDemo</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/vf-tag">VFTag</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/vf-popover">VFPop</router-link>
     </div>
     <router-view />
   </div>
