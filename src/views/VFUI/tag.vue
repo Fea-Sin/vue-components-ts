@@ -19,6 +19,9 @@
         其它测试
       </vf-tag>
     </div>
+    <div class="box">
+      <vf-icon name="date" />
+    </div>
   </div>
 </template>
 <script lang="ts">
