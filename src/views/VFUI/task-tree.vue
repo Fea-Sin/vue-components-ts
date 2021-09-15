@@ -15,11 +15,14 @@ export default Vue.extend({
         title: "主目录",
         expanded: true,
         leaf: false,
+        created: true,
+        createFolder: true,
         children: [
           {
             title: "小明的文件夹",
             expanded: false,
             leaf: false,
+            created: true,
             children: [
               {
                 title: "M任务",
@@ -33,6 +36,7 @@ export default Vue.extend({
             title: "小红的文件夹",
             expanded: false,
             leaf: false,
+            created: true,
             children: [
               {
                 title: "H任务1",
