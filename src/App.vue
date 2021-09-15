@@ -38,6 +38,8 @@
       <router-link to="/vf-tag">VFTag</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/vf-popover">VFPop</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/vf-select">VFSelect</router-link>
     </div>
     <router-view />
   </div>

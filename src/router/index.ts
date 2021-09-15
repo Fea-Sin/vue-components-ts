@@ -104,6 +104,11 @@ const routes: Array<RouteConfig> = [
     name: "VFPop",
     component: () => import("@/views/VFUI/popover.vue"),
   },
+  {
+    path: "/vf-select",
+    name: "VFSelect",
+    component: () => import("@/views/VFUI/select.vue"),
+  },
 ];
 
 const router = new VueRouter({
