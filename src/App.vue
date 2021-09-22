@@ -40,6 +40,8 @@
       <router-link to="/vf-popover">VFPop</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/vf-select">VFSelect</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/vf-tooltip">VFTooltip</router-link>
     </div>
     <router-view />
   </div>
@@ -58,6 +60,7 @@
   padding: 30px;
   font-size: 20px;
   text-align: left;
+  word-wrap: break-word;
 
   a {
     font-weight: bold;

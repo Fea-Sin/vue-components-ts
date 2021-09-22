@@ -109,6 +109,11 @@ const routes: Array<RouteConfig> = [
     name: "VFSelect",
     component: () => import("@/views/VFUI/select.vue"),
   },
+  {
+    path: "/vf-tooltip",
+    name: "VFTooltip",
+    component: () => import("@/views/VFUI/tooltip.vue"),
+  },
 ];
 
 const router = new VueRouter({
