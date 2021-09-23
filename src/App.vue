@@ -42,6 +42,8 @@
       <router-link to="/vf-select">VFSelect</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/vf-tooltip">VFTooltip</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/vf-render">VFRender</router-link>
     </div>
     <router-view />
   </div>
