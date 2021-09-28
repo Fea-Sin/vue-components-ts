@@ -119,6 +119,11 @@ const routes: Array<RouteConfig> = [
     name: "VFRender",
     component: () => import("@/views/Vrender.vue"),
   },
+  {
+    path: "/vf-tabs",
+    name: "VFTabs",
+    component: () => import("@/views/VFUI/tabs.vue"),
+  },
 ];
 
 const router = new VueRouter({
