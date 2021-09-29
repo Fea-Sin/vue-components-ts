@@ -1,6 +1,6 @@
 <template>
   <div class="TBox test-tree">
-    <div class="box">TASK-TREE</div>
+    <div class="box">VF-TASK-TREE</div>
     <div class="box layout">
       <vf-task-tree :tasks="tasks" />
     </div>
