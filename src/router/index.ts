@@ -124,6 +124,11 @@ const routes: Array<RouteConfig> = [
     name: "VFTabs",
     component: () => import("@/views/VFUI/tabs.vue"),
   },
+  {
+    path: "/obj-change",
+    name: "ObjChange",
+    component: () => import("@/views/ObjChange.vue"),
+  },
 ];
 
 const router = new VueRouter({
