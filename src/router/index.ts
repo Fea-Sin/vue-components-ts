@@ -129,6 +129,11 @@ const routes: Array<RouteConfig> = [
     name: "ObjChange",
     component: () => import("@/views/ObjChange.vue"),
   },
+  {
+    path: "/nv-shared",
+    name: "NvShared",
+    component: () => import("@/views/NVAPP/NvShared.vue"),
+  },
 ];
 
 const router = new VueRouter({

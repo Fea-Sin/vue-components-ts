@@ -48,6 +48,8 @@
       <router-link to="/vf-tabs">VFTabs</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/obj-change">ObjChange</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/nv-shared">NVShared</router-link>
     </div>
     <router-view />
   </div>
