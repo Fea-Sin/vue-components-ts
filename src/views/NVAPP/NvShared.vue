@@ -1,6 +1,6 @@
 <script>
 import Vue from "vue";
-import nvshared from "@nvapp/shared";
+import nvs from "@nvapp/shared";
 
 export default Vue.extend({
   data() {
@@ -9,9 +9,9 @@ export default Vue.extend({
     };
   },
   computed: {
-    myobj() {
-      const nv = { a: "hello" };
-      return nvshared.isPlainObject(nv);
+    mynv() {
+      const nv = { a: 12 };
+      return nvs.isPlainObject(nv);
     },
   },
 });
@@ -20,6 +20,6 @@ export default Vue.extend({
   <div class="TBox">
     <div>nv-shared</div>
     <div>{{ name }}</div>
-    <div>hello: {{ myobj }}</div>
+    <div>hello: {{ mynv }}</div>
   </div>
 </template>
