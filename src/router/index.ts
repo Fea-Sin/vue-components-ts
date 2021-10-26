@@ -134,6 +134,11 @@ const routes: Array<RouteConfig> = [
     name: "NvShared",
     component: () => import("@/views/NVAPP/NvShared.vue"),
   },
+  {
+    path: "/nv-shared-ts",
+    name: "NvSharedTs",
+    component: () => import("@/views/NVAPP/NvSharedTs.vue"),
+  },
 ];
 
 const router = new VueRouter({

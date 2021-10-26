@@ -1,16 +1,17 @@
 <script>
 import Vue from "vue";
-import { isPlainObject, isMap } from "@nvapp/shared";
+import { remove, isSet } from "@nvapp/shared";
 
 export default Vue.extend({
   computed: {
-    mynv() {
-      const nv = { a: 23 };
-      return isPlainObject(nv);
+    mynva() {
+      const arr = ["one", "two", "three"];
+      remove(arr, "two");
+      return arr;
     },
-    mynvmap() {
-      const nva = {};
-      return isMap(nva);
+    mynvb() {
+      const a = new Set([1, 2]);
+      return isSet(a);
     },
   },
 });
@@ -18,7 +19,7 @@ export default Vue.extend({
 <template>
   <div class="TBox">
     <div>nv-shared</div>
-    <div>Hello: {{ mynv }}</div>
-    <div>Map: {{ mynvmap }}</div>
+    <div>my arr: {{ mynva }}</div>
+    <div>my set: {{ mynvb }}</div>
   </div>
 </template>

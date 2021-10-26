@@ -50,6 +50,8 @@
       <router-link to="/obj-change">ObjChange</router-link>
       <span class="nav-tab-interval">|</span>
       <router-link to="/nv-shared">NVShared</router-link>
+      <span class="nav-tab-interval">|</span>
+      <router-link to="/nv-shared-ts">NVSharedTs</router-link>
     </div>
     <router-view />
   </div>
