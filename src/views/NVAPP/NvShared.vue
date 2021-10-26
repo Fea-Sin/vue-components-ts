@@ -1,17 +1,16 @@
 <script>
 import Vue from "vue";
-import nvs from "@nvapp/shared";
+import { isPlainObject, isMap } from "@nvapp/shared";
 
 export default Vue.extend({
-  data() {
-    return {
-      name: "NVShared",
-    };
-  },
   computed: {
     mynv() {
-      const nv = { a: 12 };
-      return nvs.isPlainObject(nv);
+      const nv = { a: 23 };
+      return isPlainObject(nv);
+    },
+    mynvmap() {
+      const nva = {};
+      return isMap(nva);
     },
   },
 });
@@ -19,7 +18,7 @@ export default Vue.extend({
 <template>
   <div class="TBox">
     <div>nv-shared</div>
-    <div>{{ name }}</div>
-    <div>hello: {{ mynv }}</div>
+    <div>Hello: {{ mynv }}</div>
+    <div>Map: {{ mynvmap }}</div>
   </div>
 </template>
