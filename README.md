@@ -72,6 +72,8 @@ npm run dev
 
 - [keep alive](./docs/vue-router/keep-alive.md)
 
+- [HTML5 History 模式](./docs/vue-router/history-mode.md)
+
 ### vuex-class
 
 - [概述](./docs/vuex-class/overview.md)
