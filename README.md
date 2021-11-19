@@ -110,10 +110,6 @@ npm run dev
 
 - [@mixin and @include](./docs/sass/mixin.md)
 
-## Polyfill
-
-- [Polyfill](./docs/polyfill/polyfill.md)
-
 ## 原生 js 与 DOM
 
 - [原生 js 与 DOM](./docs/js-dom/start.md)
